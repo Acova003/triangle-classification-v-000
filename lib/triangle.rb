@@ -11,7 +11,7 @@ class Triangle
  
   def kind
     sorted = [s1,s2,s3].sort
-    greatest_side = sorted.pop
+    greatest_side = sorted[-1]
     #binding.pry
     if 
       greatest_side >= sorted.reduce(:+) || sorted.include?(0) 
