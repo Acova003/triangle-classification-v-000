@@ -14,7 +14,7 @@ class Triangle
     greatest_side = sorted[-1]
     #binding.pry
     if 
-      greatest_side >= sorted.reduce(:+) || sorted.include?(0) 
+      greatest_side >= sorted[0] + sorted[1] || sorted.include?(0) 
       begin 
         raise TriangleError
           puts error.message 
